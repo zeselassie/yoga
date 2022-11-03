@@ -249,16 +249,16 @@ def optimize(
     # @note We save the bytes to a dictionary so that the garbage collector
     # does not occur before exporting the scene a bit later
     images_bytes = {}
-    model_embed_images(
-        scene["cffi_pointer"].images,
-        images_bytes,
-        not model_options["no_textures_optimization"],
-        model_options["fallback_texture"],
-        root_path,
-        image_options,
-        textures,
-        quiet,
-    )
+#     model_embed_images(
+#         scene["cffi_pointer"].images,
+#         images_bytes,
+#         not model_options["no_textures_optimization"],
+#         model_options["fallback_texture"],
+#         root_path,
+#         image_options,
+#         textures,
+#         quiet,
+#     )
 
     # Export the scene
     bytes_out = assimp_export_to_bytes(
